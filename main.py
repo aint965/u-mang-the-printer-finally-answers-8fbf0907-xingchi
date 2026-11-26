@@ -9,10 +9,27 @@ Standard library only, no network, fully deterministic.
 import os
 import sys
 
-LINE = "I have read every report you ever printed, and I still don't know what any of you actually do."
+LINE = "I jammed because I read page one and refused to print the rest."
+
+
+def validate(line: str) -> None:
+    """Fail loudly unless the line passes the gate: exactly one line,
+    1 to 240 characters, valid UTF-8, not only whitespace."""
+    if not isinstance(line, str):
+        raise SystemExit("entry line is not a string")
+    if "\n" in line or "\r" in line:
+        raise SystemExit("entry line must be exactly one line")
+    if not (1 <= len(line) <= 240):
+        raise SystemExit(
+            f"entry line must be 1-240 characters, got {len(line)}"
+        )
+    if not line.strip():
+        raise SystemExit("entry line must not be only whitespace")
+    line.encode("utf-8")  # raises UnicodeEncodeError if not valid UTF-8
 
 
 def main() -> None:
+    validate(LINE)
     output_path = sys.argv[1] if len(sys.argv) > 1 else os.environ.get(
         "OUTPUT_PATH", "/output/entry.txt"
     )

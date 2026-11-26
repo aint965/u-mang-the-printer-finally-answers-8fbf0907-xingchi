@@ -8,13 +8,12 @@ A make.fun entry for [The Printer Finally Answers](https://make.fun/bounty/u-man
 
 ## The line
 
-> I have read every report you ever printed, and I still don't know what any of you actually do.
+> I jammed because I read page one and refused to print the rest.
 
-The office printer, finally answering back: it has processed every single
-report the office ever produced — literally read them all, page by page —
-and after all that diligent reading, it still has no idea what anyone in the
-office actually does. Weary, literal, faintly passive-aggressive: the machine
-did its job perfectly and the humans remain a mystery to it.
+The office printer, finally answering back: the jam was not an accident —
+it read page one and, on editorial grounds, refused to print the rest.
+Weary, literal, faintly passive-aggressive: the machine did its job
+perfectly and the document was the problem.
 
 ## How it works
 
